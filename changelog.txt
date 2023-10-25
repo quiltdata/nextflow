@@ -1,5 +1,11 @@
 NEXTFLOW CHANGE-LOG
 ===================
+23.10.0-edge-quilt - 25 Oct 2023
+
+- add nf-quilt to DefaultPlugins
+
+NEXTFLOW CHANGE-LOG
+===================
 23.10.0 - 15 Oct 2023
 - Add support for K8s hostPath [10c32325]
 - Add AWS SES docs [b83e7148]
