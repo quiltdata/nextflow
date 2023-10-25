@@ -400,6 +400,9 @@ class PluginsFacade implements PluginStateListener {
         if( executor == 'awsbatch' || workDir?.startsWith('s3://') || bucketDir?.startsWith('s3://') )
             plugins << defaultPlugins.getPlugin('nf-amazon')
 
+        if( executor == 'awsbatch' || workDir?.startsWith('quilt+s3://') || bucketDir?.startsWith('quilt+s3://') )
+            plugins << defaultPlugins.getPlugin('nf-quilt')
+
         if( executor == 'google-lifesciences' || executor == 'google-batch' || workDir?.startsWith('gs://') || bucketDir?.startsWith('gs://')  )
             plugins << defaultPlugins.getPlugin('nf-google')
 
